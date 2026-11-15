@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Playfair+Display:wght@500;600&family=Unbounded:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media">
+      <video
+        class="hero-video"
+        src="images/gelik.mp4"
+        autoplay
+        muted
+        playsinline
+      ></video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="hero-kicker">01 // СТУДИЯ ПРЕМИАЛЬНОГО ДЕТЕЙЛИНГА</p>
+        <div class="hero-title-mask">
+          <h1 class="hero-title" id="hero-title">ЭСТЕТИКА ЧИСТОГО МЕТАЛЛА</h1>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true"></div>
+    </div>
+
+    <div class="photo-stage" id="photo-stage">
+      <div class="photo-frame" id="photo-frame">
+        <div class="photo-slide"><img src="images/fan-1.jpg" alt=""></div>
+        <div class="photo-slide"><img src="images/fan-2.jpg" alt=""></div>
+        <div class="photo-slide"><img src="images/fan-3.jpg" alt=""></div>
+        <div class="photo-slide"><img src="images/fan-4.jpg" alt=""></div>
+        <div class="photo-slide"><img src="images/fan-5.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="hero-final">
+      <div class="hero-final__mask">
+        <h2 class="hero-final__title" id="hero-final-title">Мы не моем машины.<br>Мы возвращаем им характер.</h2>
+      </div>
+      <p class="hero-final__meta" id="hero-final-meta">[ ДЕТЕЙЛИНГ // ПОЛИУРЕТАН // КЕРАМИКА // РЕСТАВРАЦИЯ ]</p>
+      <button class="hero-cta" id="hero-cta" type="button" data-scroll-quote>РАССЧИТАТЬ СТОИМОСТЬ</button>
+    </div>
+
+    <div class="hero-controls">
+      <button class="hero-control" id="hero-replay" type="button">↻ ПОВТОРИТЬ</button>
+      <button class="hero-control" id="hero-skip" type="button">ПРОПУСТИТЬ →</button>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-label="Услуги и прайс">
+    <div class="services-head">
+      <p class="services-kicker">[ 01 // КОМПЕТЕНЦИИ СТУДИИ ]</p>
+      <h2 class="services-title">Технологии защиты и эстетики.</h2>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">01 // ДЕТЕЙЛИНГ-МОЙКА</span>
+          <span class="service-card__term">3 ЧАСА</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-1.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Детейлинг-мойка</h3>
+        <p class="service-card__text">Трехфазная бережная мойка кузова, глубокая очистка дисков, уборка интерьера и консервация воском.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 6 500 ₽</span>
+          <button class="service-card__btn" type="button" data-service="wash">ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">02 // ПОЛИРОВКА КУЗОВА</span>
+          <span class="service-card__term">1–2 ДНЯ</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-2.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Полировка кузова</h3>
+        <p class="service-card__text">Многоступенчатая восстановительная полировка, удаление царапин и голограмм до зеркального глянца.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 28 000 ₽</span>
+          <button class="service-card__btn" type="button" data-service="polish">ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">03 // ОКЛЕЙКА ПОЛИУРЕТАНОМ</span>
+          <span class="service-card__term">2–4 ДНЯ</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-3.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Оклейка полиуретаном</h3>
+        <p class="service-card__text">Бронирование зон риска или всего кузова антигравийной пленкой толщиной 200 мкм с эффектом самовосстановления.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 65 000 ₽</span>
+          <button class="service-card__btn" type="button" data-service="ppf">ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">04 // КЕРАМИКА 9H</span>
+          <span class="service-card__term">1 ДЕНЬ</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-4.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Керамика 9H</h3>
+        <p class="service-card__text">Нанесение 2–3 слоев керамического состава для максимальной глубины цвета и мощного гидрофобного эффекта.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 25 000 ₽</span>
+          <button class="service-card__btn" type="button" data-service="ceramic">ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">05 // ХИМЧИСТКА ИНТЕРЬЕРА</span>
+          <span class="service-card__term">1 ДЕНЬ</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-5.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Химчистка интерьера</h3>
+        <p class="service-card__text">Деликатная очистка кожи Nappa, алькантары и карбона паром с защитной пропиткой.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 18 000 ₽</span>
+          <button class="service-card__btn" type="button" data-service="interior">ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__top">
+          <span class="service-card__code">06 // АНТИХРОМ И СТАЙЛИНГ</span>
+          <span class="service-card__term">1 ДЕНЬ</span>
+        </div>
+        <div class="service-card__media">
+          <img src="images/fan-6.jpg" alt="">
+        </div>
+        <h3 class="service-card__name">Антихром и стайлинг</h3>
+        <p class="service-card__text">Оклейка хромированных элементов в черный глянец или сатин, тонировка оптики.</p>
+        <div class="service-card__foot">
+          <span class="service-card__price">ОТ 15 000 ₽</span>
+          <button class="service-card__btn" type="button" data-scroll-quote>ВЫБРАТЬ ↗</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="standards" id="standards" aria-label="Стандарты студии">
+    <div class="standards-head">
+      <p class="standards-kicker">[ 01.5 // СТАНДАРТЫ СТУДИИ ]</p>
+    </div>
+    <div class="bento">
+      <article class="bento-card bento-card--main">
+        <h3 class="bento-card__title">Инженерный подход к каждому миллиметру кузова</h3>
+        <ul class="bento-facts">
+          <li>
+            <span class="bento-dot" aria-hidden="true"></span>
+            <p>Освещение студийного уровня (индекс цветопередачи CRI 98+) для выявления мельчайших рисок.</p>
+          </li>
+          <li>
+            <span class="bento-dot" aria-hidden="true"></span>
+            <p>Оригинальная химия и полиуретан (Koch Chemie, Gyeon, Llumar) с проверкой по QR-коду.</p>
+          </li>
+          <li>
+            <span class="bento-dot" aria-hidden="true"></span>
+            <p>Охраняемый теплый бокс с круглосуточным видеонаблюдением и страховкой авто на время работ.</p>
+          </li>
+        </ul>
+      </article>
+      <article class="bento-card bento-card--stat">
+        <p class="bento-stat">&gt;1400</p>
+        <p class="bento-stat__label">премиальных автомобилей защищено с 2019 года.</p>
+      </article>
+      <article class="bento-card bento-card--stat">
+        <p class="bento-stat bento-stat--tight">5&nbsp;ЛЕТ</p>
+        <p class="bento-stat__label">официальная гарантия на оклейку полиуретановой пленкой.</p>
+      </article>
+      <article class="bento-card bento-card--stat">
+        <p class="bento-stat">100%</p>
+        <p class="bento-stat__label"><span class="bento-stat__lead">фото- и видеоотчет</span> каждого этапа работы в ваш Telegram.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="trust" id="trust" aria-label="Репутация студии и FAQ">
+    <div class="trust-head">
+      <div class="trust-head__copy">
+        <p class="trust-kicker">[ 03 // РЕПУТАЦИЯ СТУДИИ ]</p>
+        <h2 class="trust-title">Доверие владельцев премиальных авто</h2>
+      </div>
+      <div class="reviews-nav-group" aria-label="Навигация по отзывам">
+        <button class="reviews-nav" id="reviews-prev" type="button" aria-label="Предыдущий отзыв">←</button>
+        <button class="reviews-nav" id="reviews-next" type="button" aria-label="Следующий отзыв">→</button>
+      </div>
+    </div>
+
+    <div class="reviews-carousel" id="reviews-carousel" aria-roledescription="carousel" aria-label="Отзывы клиентов">
+      <div class="reviews-viewport">
+        <div class="reviews-track" id="reviews-track">
+          <article class="review-card" data-review-slide role="group" aria-roledescription="slide" aria-label="1 из 5">
+            <div class="review-badge">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span>5.0</span>
+              <span class="review-source-sep" aria-hidden="true">//</span>
+              <span>Яндекс Карты</span>
+            </div>
+            <h3 class="review-name">Артем К. <span class="review-car">— Mercedes-AMG G63</span></h3>
+            <p class="review-text">«Загонял Гелик на полную оклейку в матовый полиуретан и антихром. Стыки пленки подвернуты идеально, даже при детальном осмотре не видно краев. Каждый день скидывали фотоотчет в Telegram».</p>
+          </article>
+          <article class="review-card" data-review-slide role="group" aria-roledescription="slide" aria-label="2 из 5">
+            <div class="review-badge">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span>5.0</span>
+              <span class="review-source-sep" aria-hidden="true">//</span>
+              <span>Яндекс Карты</span>
+            </div>
+            <h3 class="review-name">Дмитрий В. <span class="review-car">— Porsche Taycan Turbo S</span></h3>
+            <p class="review-text">«Делали восстановительную полировку и три слоя керамики 9H. Глубина черного цвета стала глубже, чем когда забирал машину из салона. Вода слетает с кузова мгновенно».</p>
+          </article>
+          <article class="review-card" data-review-slide role="group" aria-roledescription="slide" aria-label="3 из 5">
+            <div class="review-badge">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span>5.0</span>
+              <span class="review-source-sep" aria-hidden="true">//</span>
+              <span>2ГИС</span>
+            </div>
+            <h3 class="review-name">Максим С. <span class="review-car">— BMW X5 M Competition</span></h3>
+            <p class="review-text">«Химчистка светлой кожи Nappa и защита керамикой. Убрали следы от джинсов и вернули коже заводскую матовость без жирного блеска и запаха химии. Рекомендую».</p>
+          </article>
+          <article class="review-card" data-review-slide role="group" aria-roledescription="slide" aria-label="4 из 5">
+            <div class="review-badge">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span>5.0</span>
+              <span class="review-source-sep" aria-hidden="true">//</span>
+              <span>Яндекс Карты</span>
+            </div>
+            <h3 class="review-name">Егор Л. <span class="review-car">— Range Rover Autobiography</span></h3>
+            <p class="review-text">«Бронировали лобовое стекло и переднюю ударную часть. Понравился подход: при приемке замерили толщину ЛКП, показали освещение и объяснили каждый этап».</p>
+          </article>
+          <article class="review-card" data-review-slide role="group" aria-roledescription="slide" aria-label="5 из 5">
+            <div class="review-badge">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span>5.0</span>
+              <span class="review-source-sep" aria-hidden="true">//</span>
+              <span>Google Maps</span>
+            </div>
+            <h3 class="review-name">Константин Р. <span class="review-car">— Audi RS6 Avant</span></h3>
+            <p class="review-text">«Отличный сервис и закрытый охраняемый бокс. Сделали комплекс за 2 дня четко в оговоренный срок и без скрытых доплат».</p>
+          </article>
+        </div>
+      </div>
+      <p class="reviews-progress" id="reviews-progress" aria-live="polite">01 / 05</p>
+    </div>
+
+    <div class="faq" id="faq">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Не слетит ли автомобиль с дилерской гарантии после оклейки?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Нет. Мы используем сертифицированные плёнки без агрессивных клеев и не вмешиваемся в электронику и ЛКП дилерским способом. Гарантия дилера сохраняется.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Как правильно мыть машину после нанесения керамики или пленки?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Первые 7–10 дней — только бесконтактная мойка без жёстких щёток. Далее можно двухфазную детейлинг-мойку pH-нейтральной химией. Мы выдаём памятку по уходу.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Можно ли присутствовать в боксе или следить за процессом удаленно?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Да. Можно согласовать визит в бокс, а удалённо — получать фото- и видеоотчёт каждого этапа прямо в Telegram.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">
+          <span>Сколько времени занимает полная оклейка кузова полиуретаном?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Обычно 2–4 рабочих дня в зависимости от класса авто и комплектации. Точный срок считаем в конфигураторе и подтверждаем при записи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote" aria-label="Расчет стоимости и запись">
+    <div class="quote-grid">
+      <div class="quote-config">
+        <p class="quote-kicker">[ 02 // КОНФИГУРАТОР СТОИМОСТИ ]</p>
+        <h2 class="quote-title">Рассчитайте проект под ваш автомобиль.</h2>
+
+        <div class="quote-step">
+          <p class="quote-step__label">Шаг 1. Класс автомобиля</p>
+          <div class="quote-classes" role="group" aria-label="Класс авто">
+            <button class="quote-class is-active" type="button" data-coef="1" data-class="Седан / Купе">СЕДАН / КУПЕ<span>x1.0</span></button>
+            <button class="quote-class" type="button" data-coef="1.15" data-class="Кроссовер">КРОССОВЕР<span>x1.15</span></button>
+            <button class="quote-class" type="button" data-coef="1.3" data-class="Внедорожник / G-Class">ВНЕДОРОЖНИК / G-CLASS<span>x1.3</span></button>
+          </div>
+        </div>
+
+        <div class="quote-step">
+          <p class="quote-step__label">Шаг 2. Услуги</p>
+          <div class="quote-services">
+            <label class="quote-service">
+              <input type="checkbox" name="service" value="wash" data-price="6500" data-hours="3">
+              <span>Детейлинг-мойка</span>
+              <em>6 500 ₽</em>
+            </label>
+            <label class="quote-service">
+              <input type="checkbox" name="service" value="polish" data-price="28000" data-hours="16">
+              <span>Полировка кузова</span>
+              <em>28 000 ₽</em>
+            </label>
+            <label class="quote-service">
+              <input type="checkbox" name="service" value="ppf" data-price="65000" data-hours="32">
+              <span>Оклейка полиуретаном</span>
+              <em>65 000 ₽</em>
+            </label>
+            <label class="quote-service">
+              <input type="checkbox" name="service" value="ceramic" data-price="25000" data-hours="8">
+              <span>Керамика 9H</span>
+              <em>25 000 ₽</em>
+            </label>
+            <label class="quote-service">
+              <input type="checkbox" name="service" value="interior" data-price="18000" data-hours="8">
+              <span>Химчистка интерьера</span>
+              <em>18 000 ₽</em>
+            </label>
+          </div>
+        </div>
+
+        <div class="quote-total">
+          <p class="quote-total__label">Итоговая оценка</p>
+          <p class="quote-total__sum" id="quote-sum">0 ₽</p>
+          <p class="quote-total__time" id="quote-time">Выберите услуги для расчёта срока</p>
+        </div>
+      </div>
+
+      <div class="quote-form-wrap">
+        <p class="quote-kicker">[ 04 // ПЕРСОНАЛЬНЫЙ РАСЧЕТ И БРОНЬ ]</p>
+        <h2 class="quote-title quote-title--form">Записаться</h2>
+        <p class="quote-form-sub">Подберем оптимальный комплекс защиты под ваш автомобиль и зафиксируем удобное время визита в закрытый бокс</p>
+        <form class="quote-form" id="quote-form" novalidate>
+          <label class="quote-field">
+            <span>Ваше имя</span>
+            <input type="text" name="name" id="quote-name" autocomplete="name" required>
+          </label>
+          <label class="quote-field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" id="quote-phone" inputmode="tel" placeholder="+7 (___) ___-__-__" required>
+          </label>
+          <label class="quote-field">
+            <span>Марка и модель авто</span>
+            <input type="text" name="car" id="quote-car" placeholder="Mercedes-AMG G63" required>
+          </label>
+          <button class="quote-submit" type="submit">ЗАПИСАТЬСЯ НА ДЕТЕЙЛИНГ</button>
+        </form>
+        <div class="messenger-plaques" aria-label="Мессенджеры и контакты">
+          <a class="messenger-plaque messenger-plaque--telegram" href="https://t.me/apex_detailing" target="_blank" rel="noopener">
+            <span class="messenger-plaque__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.695.064-1.226-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </span>
+            <span class="messenger-plaque__text">Написать в Telegram</span>
+          </a>
+          <a class="messenger-plaque messenger-plaque--whatsapp" href="https://wa.me/79990000000" target="_blank" rel="noopener">
+            <span class="messenger-plaque__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </span>
+            <span class="messenger-plaque__text">Связаться в WhatsApp</span>
+          </a>
+          <a class="messenger-plaque messenger-plaque--email" href="mailto:info@apex-detailing.ru">
+            <span class="messenger-plaque__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 7l8 6 8-6"/></svg>
+            </span>
+            <span class="messenger-plaque__text">info@apex-detailing.ru</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contacts">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-label">Адрес студии</p>
+        <p class="footer-text">Москва, Кутузовский проспект, 36, стр. 4<br>Закрытый бокс</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Режим работы</p>
+        <p class="footer-text">Ежедневно с 10:00 до 22:00</p>
+        <a class="footer-phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">Быстрая связь</p>
+        <div class="footer-links">
+          <a class="footer-link" href="https://t.me/" target="_blank" rel="noopener">TELEGRAM</a>
+          <a class="footer-link" href="https://wa.me/79990000000" target="_blank" rel="noopener">WHATSAPP</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Forge Automotive. Все права защищены.</p>
+      <button class="footer-top" id="to-top" type="button">НАВЕРХ ↑</button>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" hidden>Заявка принята! Менеджер свяжется с вами в течение 5 минут</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
